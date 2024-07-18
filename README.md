@@ -62,6 +62,12 @@ MODEL_SAVE_FOLDER = "trained_model_directory_path"
 ```
 Update the configuration settings in your Flask application as needed. This might include MongoDB connection details, file paths, and other settings.
 
+
+**Update app.py**
+
+If you have enabled authorization on the database please enable the parameters of *MongoClient* method
+(Update app.py line no 43)
+
 ## Start the Application
 Run the Flask application:
 ```bash
