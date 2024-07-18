@@ -46,7 +46,20 @@ sudo service mongod start
 - Create the necessary collections for your application, e.g., **sessions, files**.
 
 ## Configure the Application
-Update the parameter values in .env file.
+Create and update the parameter values in .env file.
+```text
+MONGO_DB="database"
+MONGO_HOST="localhost"
+MONGO_PORT="27017"
+MONGO_USER="user_name"
+MONGO_PASSWORD="password"
+SECRET_KEY = "default_secret_key"
+AUTH_MECH = "SCRAM-SHA-256"
+DB_SESSIONS_COLL_NAME = "sessions_collection_name"
+DB_FILE_COLL_NAME = "user_files_collection_name"
+FILE_UPLOAD_FOLDER = "user_files_directory_path"
+MODEL_SAVE_FOLDER = "trained_model_directory_path"
+```
 Update the configuration settings in your Flask application as needed. This might include MongoDB connection details, file paths, and other settings.
 
 ## Start the Application
